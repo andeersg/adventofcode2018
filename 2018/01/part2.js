@@ -23,7 +23,7 @@ const examples = [
 
 function parseSequence(actions) {
   const initial = 0;
-  const frequencesFound = [initial];
+  const frequencesFound = new Set([initial]);
   let updated = initial;
   let duplicateFound = false;
 
@@ -40,12 +40,12 @@ function parseSequence(actions) {
         updated -= value;
       }
 
-      if (frequencesFound.indexOf(updated) !== -1) {
+      if (frequencesFound.has(updated)) {
         // This is the value!
         return updated;
       }
       else {
-        frequencesFound.push(updated);
+        frequencesFound.add(updated);
       }
     }
   }
