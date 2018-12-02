@@ -1,0 +1,12 @@
+{
+  "name": "advent2017",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "expect": "^21.2.1",
+    "got": "^8.0.0",
+    "left-pad": "^1.2.0",
+    "number-converter": "^1.2.1"
+  }
+}
