@@ -45,9 +45,7 @@ function findUnique(grid) {
   v.forEach((col) => {
     Object.values(col).forEach(cell => {
       if (cell.length > 1) {
-        ids = ids.filter(i => {
-          return !cell.includes(i);
-        });
+        ids = ids.filter(i => !cell.includes(i));
       }
     });
   });
