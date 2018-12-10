@@ -7,7 +7,7 @@ const ex = `#1 @ 1,3: 4x4
 // const rows = ex.split("\n").filter(i => i !== '');
 
 // const data = document.querySelector('pre').innerText; const rows = data.split("\n").filter(i => i !== '');
-const data = fs.readFileSync('../input_data/input-03.txt', 'utf8');
+const data = fs.readFileSync('./input-03.txt', 'utf8');
 const rows = data.split("\n").filter(i => i !== '');
 
 function parse(row) {

@@ -59,7 +59,7 @@ assert.strictEqual(parseSequence(examples[0].test.split(', ')), examples[0].answ
 assert.strictEqual(parseSequence(examples[1].test.split(', ')), examples[1].answer);
 assert.strictEqual(parseSequence(examples[2].test.split(', ')), examples[2].answer);
 
-const file = fs.readFileSync('../input_data/input-01.txt', 'utf8');
+const file = fs.readFileSync('./input-01.txt', 'utf8');
 const ops = file.split("\n");
 console.time('Part 2');
 const answer = parseSequence(ops);

@@ -27,7 +27,7 @@ assert.strictEqual(parseSequence(ex1), 3);
 assert.strictEqual(parseSequence(ex2), 0);
 assert.strictEqual(parseSequence(ex3), -6);
 
-const file = fs.readFileSync('../input_data/input-01.txt', 'utf8');
+const file = fs.readFileSync('./input-01.txt', 'utf8');
 const ops = file.split("\n");
 
 const answer = parseSequence(ops);
